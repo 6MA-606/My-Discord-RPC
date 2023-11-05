@@ -5,7 +5,7 @@ configDotenv()
 
 const { CLIENT_ID } = process.env
 
-const RPC = new DiscordRPC.Client({ transport: 'websocket' })
+const RPC = new DiscordRPC.Client({ transport: 'ipc' })
 
 DiscordRPC.register(CLIENT_ID)
 
